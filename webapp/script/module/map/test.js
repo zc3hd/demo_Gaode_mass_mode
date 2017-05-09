@@ -11,15 +11,19 @@ var fence_data = [
     all_sum: 56,
     active_sum: 0,
     lnglat: [116.648895, 39.922018]
-  }, {
+  }, 
+  {
     all_sum: 50,
     active_sum: 23,
     lnglat: [116.657807, 39.921576]
-  }, {
+  }, 
+  {
     all_sum: 50,
     active_sum: 25,
     lnglat: [116.690577, 39.924453]
-  }],
+    // lnglat: []
+  }
+  ],
   // ----报警数据--同理
   [{
     all_sum: 56,
@@ -82,7 +86,7 @@ var fence_s_data = [{
   // 数组里面是每个自行车得数据。有最后的上传的时间和坐标
   // （lnglat这个必须为这个字段名，属性值必须是按照这样的结构 [116.648895, 39.922018]）
 var bike_data = [{
-  company: 'off',
+  company: '11011210',
   alram: [{
     last_time: (new Date().getTime()),
     lnglat: [116.65831, 39.911947 + Math.random() * 0.01]
@@ -101,7 +105,7 @@ var bike_data = [{
     }
   ]
 }, {
-  company: 'mb',
+  company: '11011211',
   alram: [{
     last_time: (new Date().getTime()),
     lnglat: [116.649327 + Math.random() * 0.01, 39.9006]
